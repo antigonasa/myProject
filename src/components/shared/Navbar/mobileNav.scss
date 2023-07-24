@@ -1,0 +1,107 @@
+.mobile-nav .sidebar {
+    position: fixed;
+    background-color: #fff;
+    width: 320px;
+    max-width: 85%;
+    height: 100%;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    animation: slideSidebar 0.3s linear;
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        padding: 15px 30px;
+        button {
+            color: var(--darkColorText);
+            background: none;
+            font-size: 35px;
+            cursor: pointer;
+            border: 0;
+            display: flex;
+        }
+    }
+
+    .sidebar-logo {
+        width: 60px;
+        content: url('../../../assets/shared/halfLogo-green-dark.svg');
+    }
+
+    .sidebar-link{
+        border-bottom: 1px solid #ddd;
+        &:hover .inner-sidebar-link{
+            border-left: 4px solid var(--green);
+        }
+    }
+
+    .inner-sidebar-link{
+        display: flex;
+        align-items: center;
+        padding:15px 30px;
+        padding-left: 26px;
+        border-left: 4px solid transparent;
+        .link{
+            color:var(--darkColorText);;
+            font-size: 17px;
+            font-weight: 500;
+            padding-right: 15px;
+        }
+        button{
+            border:0;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 20px;
+            background: none;
+            cursor: pointer;
+            svg{
+                transition: 0.25s ease-in-out;
+            }
+        }
+        .rotate svg{
+            rotate: -180deg;
+        }
+    }
+    .dropdown-links{
+        display: flex;
+        flex-direction: column;
+        a{
+            color:var(--darkColorText);;
+            padding:15px 30px;
+            border-bottom: 1px solid #ddd;
+        }
+        a:last-child{
+            border-bottom: 0;
+        }
+    }
+    .sidebar-auth{
+        padding:15px 30px;
+        margin: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+.mobile-nav .backdrop{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 1100;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slideSidebar{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

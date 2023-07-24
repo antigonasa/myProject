@@ -1,0 +1,22 @@
+.home-page .banner{
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../../../../assets/Home/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color:#fff;
+    padding:180px 10% 100px;
+    text-align: center;
+    .text{
+        width: 500px;
+        margin:0 auto;
+        max-width: 100%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 18px;
+        margin:10px 0 35px;
+    }
+}
