@@ -1,97 +1,15 @@
 import React from 'react'
 import Navbar from '../../components/shared/Navbar/Navbar'
-import img1 from '../../assets/Home/img1.jpg'
-import img2 from '../../assets/Home/img2.jpg'
-import img3 from '../../assets/Home/img3.jpg'
-import img4 from '../../assets/Home/img4.jpg'
-import img5 from '../../assets/Home/img5.jpg'
-import img6 from '../../assets/Home/img6.jpg'
+import Banner from '../../components/pages/Home/Banner'
+import Form from '../../components/pages/Login/Form'
 
 const Login = () => {
   return (
-    <div className='login-page shared-page'>
+    <div className='login-page shared-page home-page'>
       <Navbar />
-      <img src={img1} />
-      <img src={img2} />
-      <img src={img3} />
-      <img src={img4} />
-      <img src={img5} />
-      <img src={img6} />
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-      <h1>Login</h1>
-    </div>
+      <Banner />
+      <Form />
+     </div>
   )
 }
 

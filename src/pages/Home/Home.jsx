@@ -5,12 +5,16 @@ import Navbar from '../../components/shared/Navbar/Navbar'
 import img1 from '../../assets/Home/img1.jpg'
 import img3 from '../../assets/Home/img3.jpg'
 import img4 from '../../assets/Home/img4.jpg'
+import Images from '../../components/pages/Home/Images'
+import Todos from '../../components/pages/Home/Todos'
 
 const Home = () => {
   return (
     <div className='home-page shared-page'>
       <Navbar />
       <Banner />
+      <Todos />
+      <Images />
       <MainItem
         title='Empowering girls to choose a career in ICT'
         text="Outkos Academy is partnering up with KosovaGirls to offer opportunities for girls and women to learn computer science, coding and apps development, also to be well-placed for a successful career in the ICT sector. The jobs of the future in many industries will be driven by technology and innovation, that's why learning tech skills at a young age will help girls become economically independent."
